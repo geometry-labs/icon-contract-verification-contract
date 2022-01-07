@@ -24,13 +24,18 @@ import score.annotation.EventLog;
 public class ContractVerification {
     private final String version;
 
-    public ContractVerification() {
+    public ContractVerification(String version) {
         this.version = version;
     }
 
     @External(readonly = true)
     public String name() {
         return "ICON Contract Verification Contract";
+    }
+
+    @External(readonly = true)
+    public String version() {
+        return version;
     }
 
     @External

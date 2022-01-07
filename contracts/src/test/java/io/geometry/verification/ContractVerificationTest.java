@@ -25,7 +25,7 @@ class AppTest {
     @Test
     void appHasAName() {
         final String version = "v0.1.0";
-        ContractVerifiction classUnderTest = new ContractVerifiction(version);
+        ContractVerification classUnderTest = new ContractVerification(version);
         assertEquals(classUnderTest.version(), version);
     }
 }
