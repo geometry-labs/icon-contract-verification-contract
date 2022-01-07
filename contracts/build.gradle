@@ -8,7 +8,7 @@ dependencies {
 }
 
 optimizedJar {
-    mainClassName = 'io.geometry.verification'
+    mainClassName = 'io.geometry.verification.ContractVerification'
     archivesBaseName = 'contract-verification'
 }
 

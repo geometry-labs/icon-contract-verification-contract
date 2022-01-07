@@ -90,13 +90,6 @@ public class ContractVerification {
         );
     }
 
-    // This need cannot be a fully indexed event log unless it is split up (max 3 indexed events)
-    // https://www.javadoc.io/doc/foundation.icon/javaee-api/latest/score/annotation/EventLog.html
-    // Instead we either need to
-    //  1. Keep a version number of the contract so we know what order the params we are parsing are in - should be the same as a proto order
-    //  2. Emit separate event logs as indexed events - Can be groups of 3 max -
-    //  3. Turned into json and emitted as bytes
-
     @EventLog
     protected void Verification(
             Address from_address,
