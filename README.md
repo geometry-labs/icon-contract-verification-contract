@@ -30,11 +30,30 @@ goloop rpc sendtx call \
     --key_store <keystore> --key_password <pw> \
     --nid 7 --step_limit=100000000000 \
     --param contract_address=cx03f38c36460b2e9ce68a67f83fc9608690b1f64e \
-    + <extra params as indicated below, ie -> \
+    --param website="" \
+    --param team_name="" \
+    --param short_description="" \
+    --param long_description="" \
+    --param p_rep_address="" \
+    --param city="" \
+    --param country="" \
+    --param license="" \
+    --param facebook="" \
+    --param telegram="" \
+    --param reddit="" \
+    --param discord="" \
+    --param steemit="" \
+    --param twitter="" \
+    --param youtube="" \
+    --param github="" \
+    --param keybase="" \
+    --param wechat="" \
     --param website=geometry.io
 ```
 
 ## Verification Parameters 
+
+All fields are strings and must be included in the Tx. 
 
 - contract_address - The address being verified
 - website
@@ -57,6 +76,16 @@ goloop rpc sendtx call \
 - wechat
 - zipped_source_code - Zipped up source code byte string 
 
+## Zipping Source Code 
+
+Zip up your source code from the parent directory. For instance from the parent of this repo:
+
+```shell
+zip -r contract-verification.zip contract-verification
+xxd -p contract-verification.zip > contract-verification.txt
+```
+
+Then include that byte string in the `zipped_source_code` field in the transaction. 
 
 ## License 
 
