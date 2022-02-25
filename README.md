@@ -4,9 +4,9 @@ Contract used to upload details about a contract to the chain so the source code
 verified off-chain against what is on-chain. Transactions will be ignored that are not 
 sent from the contract owner on the backend that is processing these transactions. 
 
-Mainnet: `cxfc514c18d8dd85f06e31509a1f231efc5d8939e0`
-Berlin: `cx4a574176f82852487b547126b7a59874f5599acd`
-Lisbon: `cx59fd09b8fd87ad82961c29c4ff5e44773f629330`
+- Mainnet: `cxfc514c18d8dd85f06e31509a1f231efc5d8939e0`
+- Berlin: `cx4a574176f82852487b547126b7a59874f5599acd`
+- Lisbon: `cx59fd09b8fd87ad82961c29c4ff5e44773f629330`
 
 Build: 
 ```shell
